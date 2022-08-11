@@ -48,3 +48,9 @@ body {
 .icon {
   width: 30px;
 }
+
+.book-arrange {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+}
