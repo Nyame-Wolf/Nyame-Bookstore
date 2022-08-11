@@ -29,8 +29,8 @@ In the project directory, you can run:
 ### Setup
 
 - Clone this repo ~$ git clone
-  - http :
-  - ssh :
+  - http : https://github.com/Nyame-Wolf/Nyame-Bookstore.git
+  - ssh : git@github.com:Nyame-Wolf/Nyame-Bookstore.git
 - Change directory to movie app ~$ cd movie-app
 
 ### Install
