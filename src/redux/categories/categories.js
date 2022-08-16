@@ -1,5 +1,5 @@
 // Actions
-const STATUS = '/src/redux/categories/STATUS';
+const STATUS = '/src/categories/STATUS';
 
 // Reducer
 export default function categoryReducer(state = [], action = {}) {

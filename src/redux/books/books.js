@@ -1,13 +1,15 @@
 // Actions
-const REMOVE = '/src/redux/books/REMOVE';
-const ADD = '/src/redux/books/ADD';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+
+const initialState = [];
 
 // Reducer
-export default function bookReducer(state = [], action = {}) {
+export default function bookReducer(state = initialState, action = {}) {
   switch (action.type) {
-    case ADD:
-      return state.concat(action.book);
-    case REMOVE: return state.filter((book) => book.id !== action.book.id);
+    case ADD_BOOK:
+      return [...state.concat(action.book)];
+    case REMOVE_BOOK: return [...state.filter((book) => book.id !== action.book.id)];
     default: return state;
   }
 }
@@ -15,8 +17,8 @@ export default function bookReducer(state = [], action = {}) {
 // Action Creators
 
 export function addBook(book) {
-  return { type: ADD, book };
+  return { type: ADD_BOOK, book };
 }
 export function removeBooks(book) {
-  return { type: REMOVE, book };
+  return { type: REMOVE_BOOK, book };
 }
