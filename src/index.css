@@ -42,7 +42,8 @@ body {
 
 .container {
   width: 80%;
-  margin: 1em;
+  margin: 0 auto;
+  padding: 1em;
 }
 
 .icon {
