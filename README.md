@@ -2,7 +2,7 @@
 
 # Nyame Bookstore
 
-**Nyame Bookstore is React based application.**
+**Nyame Bookstore is React and Redux based application. It allows you to add and remove books as well as keeps a record of the progress made while reading.**
 
 ## Built With
 
