@@ -1,15 +1,19 @@
 /* eslint-disable react/prop-types */
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const { book } = props;
+  const dispatch = useDispatch();
   return (
     <div>
+
       <div className="book-arrange">
         <p>
-          {title}
+          {book.title}
         </p>
-        <p><small>{author}</small></p>
-        <button type="button">Remove Book</button>
+        <p><small>{book.author}</small></p>
+        <button type="button" onClick={() => { dispatch(removeBook(book)); }}>Remove Book</button>
       </div>
     </div>
   );
