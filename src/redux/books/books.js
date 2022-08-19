@@ -1,23 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-// import axios from 'axios';
 
 const api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/iSbJ6TI9jJNZyQ7363lB';
 const addGetBook = `${api}/books`;
-const initialState = [
-  // { item_id: 1, title: 'Learn React', author: 'Kent C Doods' },
-  // { item_id: 2, title: 'Do gooder', author: 'Vitor' },
-  // { item_id: 3, title: 'Best bestie', author: 'Karla' },
-];
-
-// First, create the thunk
-// export const createBook = createAsyncThunk(
-//   'Book/createBook',
-//   async (book) => {
-//     const response = await axios.post(addGetBook, book);
-//     console.log(response.data);
-//     return response.data;
-//   },
-// );
+const initialState = [];
 
 export const createBook = createAsyncThunk(
   'book/createBook',
@@ -28,10 +13,6 @@ export const createBook = createAsyncThunk(
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(
-        // item_id: book.item_id,
-        // title: book.title,
-        // author: book.author,
-        // category: book.category,
         book,
       ),
     });
@@ -115,7 +96,5 @@ export const bookSlice = createSlice({
   },
 
 });
-
-// export const { addBook, removeBook } = bookSlice.actions;
 
 export default bookSlice.reducer;
