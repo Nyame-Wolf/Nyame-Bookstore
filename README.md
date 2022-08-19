@@ -2,7 +2,7 @@
 
 # Nyame Bookstore
 
-**Nyame Bookstore is React and Redux based application. It allows you to add and remove books as well as keeps a record of the progress made while reading.**
+**Nyame Bookstore is React and Redux based application. It allows you to add and remove books you are reading from a list of books.**
 
 ## Built With
 
@@ -96,7 +96,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse for the logic files that activate the calculator and operators.
+- Microverse for the [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) that lets me post, get and delete a book.
 - Inspiration
 
 ## 📝 License
