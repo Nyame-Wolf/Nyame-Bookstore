@@ -109,7 +109,9 @@ export const bookSlice = createSlice({
       .addCase(getBook.fulfilled, (state, action) => {
         state.push(action.payload);
       })
-      .addCase(getBooks.fulfilled, (state, action) => action.payload);
+      .addCase(getBooks.fulfilled, (state, action) => Object.entries(action.payload).map(
+        ([id, [book]]) => ({ ...book, item_id: id }),
+      ));
   },
 
 });
