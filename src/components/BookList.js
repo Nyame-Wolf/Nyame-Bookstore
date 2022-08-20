@@ -15,9 +15,12 @@ const BookList = () => {
   return (
     <div>
       <div id="books-list">
-        {books.map((book) => (
-          <Book key={book.item_id} book={book} />
-        ))}
+        <div className="book-container">
+          {books.map((book) => (
+            <ul key={book.item_id}><Book book={book} /></ul>
+
+          ))}
+        </div>
         <BookForm />
       </div>
 

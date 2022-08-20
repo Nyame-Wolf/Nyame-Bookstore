@@ -10,7 +10,7 @@ function App() {
     <div>
       <div className="container">
         <div className="heading">
-          <h1>Bookstore CMS</h1>
+          <h1 className="book-heading">Bookstore CMS</h1>
           <Navigation className="link-items" />
           <img src={userIcon} alt="userIcon" className="icon" />
         </div>
