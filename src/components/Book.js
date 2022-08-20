@@ -6,14 +6,24 @@ const Book = (props) => {
   const { book } = props;
   const dispatch = useDispatch();
   return (
-    <div>
-
+    <div className="book">
       <div className="book-arrange">
-        <p>
-          {book.title}
-        </p>
-        <p><small>{book.author}</small></p>
-        <button type="button" onClick={() => { dispatch(removeBook({ book })); }}>Remove Book</button>
+        <div className="book-arrange-header">
+          <p>{book.category}</p>
+          <h2 className="book-title">{book.title}</h2>
+          <p className="author-p"><small className="book-author">{book.author}</small></p>
+          <div className="btns">
+            <button className="btn" type="button">Comments</button>
+            <button className="btn remove" type="button" onClick={() => { dispatch(removeBook({ book })); }}>Remove Book</button>
+            <button className="btn" type="button">Edit</button>
+          </div>
+        </div>
+        <p className="progress-circle" />
+        <div className="arrange-end">
+          <p>CURRENT CHAPTER</p>
+          <p>Chapter 3:&quot;A Lesson Learned&quot;</p>
+          <button className="update-btn" type="button">UPDATE PROGRESS</button>
+        </div>
       </div>
     </div>
   );
@@ -21,7 +31,7 @@ const Book = (props) => {
 
 Book.propTypes = {
   book: PropTypes.shape(
-    { title: PropTypes.string, author: PropTypes.string },
+    { title: PropTypes.string, author: PropTypes.string, category: PropTypes.string },
   ).isRequired,
 };
 export default Book;
