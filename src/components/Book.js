@@ -1,6 +1,24 @@
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgress } from '@mui/material';
 import { removeBook } from '../redux/books/books';
+
+function CircularProgressWithLabel(props) {
+  /* eslint-disable */
+  return <CircularProgress variant="determinate" {...props} size={"80px"} />;
+  /* eslint-enable */
+}
+
+export function CircularStatic() {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setProgress(30 + (Math.floor(Math.random() * 10)));
+  }, []);
+
+  return <CircularProgressWithLabel value={progress} />;
+}
 
 const Book = (props) => {
   const { book } = props;
@@ -18,10 +36,20 @@ const Book = (props) => {
             <button className="btn" type="button">Edit</button>
           </div>
         </div>
-        <p className="progress-circle" />
+        <div className="middle-container">
+          <CircularStatic />
+          <div className="completed-progress">
+            <span className="percentage">
+              {Math.floor(Math.random() * 101)}
+              %
+            </span>
+            <span className="text-complete">Completed</span>
+          </div>
+        </div>
+
         <div className="arrange-end">
-          <p>CURRENT CHAPTER</p>
-          <p>Chapter 3:&quot;A Lesson Learned&quot;</p>
+          <p className="current-chapter">CURRENT CHAPTER</p>
+          <p className="current-lesson">Chapter 3:&quot;A Lesson Learned&quot;</p>
           <button className="update-btn" type="button">UPDATE PROGRESS</button>
         </div>
       </div>

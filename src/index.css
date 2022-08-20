@@ -24,6 +24,7 @@ body {
   letter-spacing: normal;
   color: #0290ff;
 }
+
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
@@ -34,6 +35,7 @@ body {
   letter-spacing: 1.9px;
   color: #121212;
 }
+
 .heading {
   display: flex;
   gap: 5em;
@@ -48,11 +50,13 @@ body {
   gap: 2em;
   margin-right: auto;
 }
+
 .book-container {
   max-height: 600px;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .book-title {
   font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
@@ -61,12 +65,14 @@ body {
   color: #121212;
   padding-top: 10px;
 }
+
 .book-author {
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
 }
+
 .add-books {
   padding-top: 1em;
 }
@@ -82,9 +88,11 @@ body {
   margin: 0 auto;
   padding: 1em;
 }
+
 .title {
   flex: 2 1;
 }
+
 .icon {
   width: 30px;
 }
@@ -131,15 +139,6 @@ body {
   background-color: #fff;
 }
 
-/* .progress-circle {
-  width: 4.25rem;
-  height: 4.25rem;
-  border-style: solid;
-  border-width: 5px;
-  border-image-source: linear-gradient(to bottom, #307bbe, var(--dodger-blue));
-  border-image-slice: 1;
-} */
-
 .btns {
   display: flex;
   gap: 19px;
@@ -149,6 +148,7 @@ body {
   border-left: 1px solid wheat;
   border-right: 1px solid wheat;
 }
+
 .author-p {
   padding-bottom: 20px;
 }
@@ -175,4 +175,61 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.current-chapter {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: #121212;
+}
+
+.current-lesson {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.middle-container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed-progress {
+  width: 50%;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.percentage {
+  width: 100%;
+  font-family: var(--monserrat);
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.text-complete {
+  width: 100%;
+  opacity: 0.5;
+  font-family: var(--monserrat);
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
