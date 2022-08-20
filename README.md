@@ -97,7 +97,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse for the [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739) that lets me post, get and delete a book.
-- Inspiration
+- Inspiration: Design of the appearance is inspired by a Microverse students - Usman Suleiman Babakolo, in his [Zeplin project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)project.
 
 ## 📝 License
 
